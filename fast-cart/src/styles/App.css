@@ -1,0 +1,28 @@
+.width-100percent{
+  width: 100%;
+  height: 80%;
+}
+
+
+.flex-row{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.flex-row-noWrap{
+  display: flex;
+  flex-direction: row;
+}
+
+.icon-30px{
+  height: 30px;
+  width: 30px;
+  background-size: 30px 30px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
+
+
+
