@@ -1,0 +1,23 @@
+.navbar{
+    position: relative;
+    height: 40px;
+    width: 100%;
+    background-color: pink;
+  }
+  
+  .cartButton{
+    background-image : url(../assets/shopping-cart.svg);
+  }
+  
+  
+  .page-title{
+    margin: 0px;
+    font-size: 32px;
+  }
+  
+  .searchbox{
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  
+  

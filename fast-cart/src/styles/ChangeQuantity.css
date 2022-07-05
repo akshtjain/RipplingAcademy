@@ -1,0 +1,7 @@
+.remove-item{
+    background-image: url(../assets/minus.svg);
+}
+
+.add-item{
+    background-image: url(../assets/plus.svg);
+}

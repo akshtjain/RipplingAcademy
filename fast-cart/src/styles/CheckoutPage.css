@@ -1,0 +1,11 @@
+.checkoutPage-tile{
+    margin-top: 32px;
+}
+
+.checkoutPage-product-image, .productTile-product-image{
+    height: 250px;
+    width: 300px;
+    object-fit: contain;
+    margin:auto;
+    display: block;
+}

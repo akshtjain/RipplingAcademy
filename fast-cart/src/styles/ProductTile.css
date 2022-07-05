@@ -1,0 +1,21 @@
+.product-tile{
+    flex: 20%;
+    border-style: solid;
+    background-color: aliceblue;
+    border-radius: 20px;
+    margin: 5px;
+  }
+  
+  
+  
+  .productTile-product-image{
+    height: 250px;
+    width: 300px;
+    object-fit: contain;
+    margin:auto;
+    display: block;
+  }
+
+  .productTile-product-description{
+    text-align: center;
+  }
