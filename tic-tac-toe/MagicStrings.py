@@ -1,0 +1,10 @@
+TIC_TIC_TOE_MOVE_INSTRUCTION = 'Enter Move in the Format (row, col).\n1-based indexing \nExample 3,3'
+REFEREE_SAYS = 'Referee Says: '
+BAD_MOVE = 'Oops! Not available'
+GOOD_MOVE = 'Good Boi , Good Move'
+PLAYER_0_MOVE = 'X'
+PLAYER_1_MOVE = '0'
+WRONG_INPUT_FORMAT = 'Hold right there sparky, input formal invalid'
+PLAYER_X_WON = 'Player {} won'
+GAME_DRAWN = 'BORING!!! No winner'
+
