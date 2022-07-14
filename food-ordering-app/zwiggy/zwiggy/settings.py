@@ -9,7 +9,8 @@ https://docs.djangoproject.com/en/4.0/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.0/ref/settings/
 """
-
+import certifi
+import mongoengine
 from pathlib import Path
 import os
 
@@ -38,14 +39,13 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'app'
+    'internal',
 ]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
-    'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
@@ -74,8 +74,8 @@ WSGI_APPLICATION = 'zwiggy.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
-import mongoengine
-mongoengine.connect(host="mongodb+srv://zwiggy-admin:PZgDk0cmlm99vdj1@aksht-rippling-cluster0.dv3kexe.mongodb.net/?retryWrites=true&w=majority", db="zwiggy")
+mongoengine.connect(host="mongodb+srv://zwiggy-admin:PZgDk0cmlm99vdj1@aksht-rippling-cluster0.dv3kexe.mongodb.net/?retryWrites=true&w=majority", db="zwiggy",
+                    tlsCAFile=certifi.where())
 
 # DATABASES = {
 #     'default': {
