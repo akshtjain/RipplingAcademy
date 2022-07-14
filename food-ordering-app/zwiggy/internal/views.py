@@ -21,7 +21,6 @@ def delete_restaurant(request):
         if len(restaurant) == 0:
             return HttpResponseBadRequest('Bad Request')
         restaurant.delete()
-
     return HttpResponse(status=200)
 
 
